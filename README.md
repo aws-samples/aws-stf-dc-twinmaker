@@ -23,7 +23,9 @@ It shows you how to easily build a Digital Twin of a Classroom as illustrated be
 
 AWS IoT TwinMaker is an AWS IoT service that you can use to build operational digital twins of physical and digital systems. AWS IoT TwinMaker creates digital visualizations using measurements and analysis from a variety of real-world sensors, cameras, and enterprise applications to help you keep track of your physical factory, building, or industrial plant. You can use this real-world data to monitor operations, diagnose and correct errors, and optimize operations.
 
-AWS IoT TwinMaker provides an unified data access API to read from and write to your digital twin’s source data. This CDK application contains a stack that will create a [Workspace](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-gs-workspace.html), a [Component](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-component-types.html) that acts as a data connector to the STF IoT Datalake and one or multiple [Entities](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-gs-entity.html) for your IoT thing(s) (see the file [things.ts](./things.ts))
+AWS IoT TwinMaker provides a unified data access API to read from and write to your digital twin’s source data.
+
+This CDK application contains a stack that will create a [Workspace](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-gs-workspace.html), a [Component](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-component-types.html) that acts as a data connector to the STF IoT Datalake and one or multiple [Entities](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-gs-entity.html) for your IoT thing(s) (see the file [things.ts](./things.ts))
 
 The TwinMaker component contains a Lambda function that queries the data from the S3 bucket of STF IoT Datalake using Athena. __You must have deployed the [STF Core](https://github.com/aws-samples/aws-stf-core-scorpio) stack and the [Data Consumer using Amazon Athena](https://github.com/aws-samples/aws-stf-dc-athena) stack before proceeding with this one__ 
 
