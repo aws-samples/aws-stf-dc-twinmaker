@@ -39,7 +39,7 @@ export class StfDcTwinmakerStack extends cdk.Stack {
 
     component.node.addDependency(workspace)
 
-    // ENTITIES - SEE ENTITIES.JSON FILE
+    // ENTITIES - SEE things.ts FILE
 
     const indoorEnventities = new Entities(this, 'IndoorEnvEntities', {
         things: things,
