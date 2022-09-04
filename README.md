@@ -11,7 +11,7 @@ __You must have deployed the [STF Core](https://github.com/aws-samples/aws-stf-c
 
 ## Overview
 
-This repository contains a [CDK](https://aws.amazon.com/cdk/) application that provision resources in [AWS IoT TwinMaker](https://aws.amazon.com/iot-twinmaker/) to make it easy to build Digital Twins using the STF IoT Datalake as a data source.
+This repository contains a [CDK](https://aws.amazon.com/cdk/) application that provisions resources in [AWS IoT TwinMaker](https://aws.amazon.com/iot-twinmaker/) to make it easy to build Digital Twins using the STF IoT Datalake as a data source.
 
 It shows you how to easily build a Digital Twin of a Classroom as illustrated below using the Smart Territory Framework and AWS IoT TwinMaker.
 
